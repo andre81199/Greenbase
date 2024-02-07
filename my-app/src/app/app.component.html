@@ -1,0 +1,50 @@
+<div class="row d-block g-0 vh-100">
+  <!-- Navbar -->
+  <nav class="navbar p-2">
+    <div class="container-fluid">
+      <div class="row w-100 g-0">
+        <!-- Logo -->
+        <div class="col-2 d-flex align-items-center">
+          <img class="navbar-brand" src="../assets/navigation/logo.svg" />
+        </div>
+
+        <!-- Search bar -->
+        <div class="col-8 d-flex align-items-center">
+          <input type="text" class="form-control" placeholder="Search" />
+        </div>
+
+        <div class="col-2 d-flex align-items-center justify-content-end">
+          <!-- Inbox Icon -->
+          <img class="mx-2" src="../assets/navigation/chat.png" />
+
+          <!-- Alert Icon -->
+          <img class="mx-2" src="../assets/navigation/01 Settings.png" />
+
+          <!-- Profile Dropdown -->
+          <div class="dropdown">
+            <button
+              class="btn navbar-dropdown-btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img class="pe-2" src="../assets/navigation/avatar.png" />
+              X’eriya Ponald
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navigation Panel -->
+  <div class="row d-flex h-100 g-0">
+    <div class="col-2">
+      <app-navigation></app-navigation>
+    </div>
+
+    <div class="col-10 bg-light">
+      <app-settings></app-settings>
+    </div>
+  </div>
+</div>
