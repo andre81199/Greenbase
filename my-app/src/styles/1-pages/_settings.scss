@@ -10,20 +10,23 @@
   box-shadow: 0 1px 4px rgb(0 0 0 / 0.08);
 }
 
-.btn-primary {
-  background: $accent-color;
-  color: white;
-}
-
-.btn-secondary {
-  background: white;
-  color: $accent-color;
-  border: 1px solid #d7dbec;
-}
-
 .profile-image-select {
-  padding: 4rem;
+  padding: 2rem;
   border: 1px dashed #a1a7c4;
   border-radius: 4px;
   margin-bottom: 1rem;
+}
+
+hr {
+  border: 1px solid #d7dbec !important;
+}
+
+.form-switch.form-switch-lg {
+  margin-bottom: 1.5rem; /* JUST FOR STYLING PURPOSE */
+}
+
+.form-switch.form-switch-lg .form-check-input {
+  height: 2rem;
+  width: calc(3rem + 0.75rem);
+  border-radius: 4rem;
 }

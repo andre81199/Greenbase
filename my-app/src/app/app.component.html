@@ -10,7 +10,8 @@
 
         <!-- Search bar -->
         <div class="col-8 d-flex align-items-center">
-          <input type="text" class="form-control" placeholder="Search" />
+          <img class="mx-2" src="../assets/navigation/01 Search.png" />
+          <input type="text" class="form-control search-input ps-0" placeholder="Search.." />
         </div>
 
         <div class="col-2 d-flex align-items-center justify-content-end">
@@ -18,16 +19,18 @@
           <img class="mx-2" src="../assets/navigation/chat.png" />
 
           <!-- Alert Icon -->
-          <img class="mx-2" src="../assets/navigation/01 Settings.png" />
+          <div class="alert-icon position-relative">
+            <img class="mx-2" src="../assets/navigation/01 alert.png" />
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+              5
+            </span>
+          </div>
+
 
           <!-- Profile Dropdown -->
           <div class="dropdown">
-            <button
-              class="btn navbar-dropdown-btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <button class="btn navbar-dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <img class="pe-2" src="../assets/navigation/avatar.png" />
               X’eriya Ponald
             </button>

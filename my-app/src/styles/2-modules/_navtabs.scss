@@ -1,0 +1,22 @@
+.nav-tabs {
+  .nav-link {
+    font-family: "Inter";
+    font-size: 1rem;
+    color: #5a607f;
+    font-weight: 300;
+    border-width: 0 0 2px 0 !important;
+    border-color: transparent !important;
+
+    &.active {
+      color: #1e5eff !important;
+      //border-bottom: 1px solid #1e5eff;
+      border-width: 0 0 2px 0 !important;
+      border-color: #1e5eff !important;
+    }
+
+    &:hover {
+      border-width: 0 0 2px 0 !important;
+      color: #1e5eff !important;
+    }
+  }
+}
