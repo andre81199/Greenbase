@@ -10,192 +10,44 @@
         </div>
     </div>
 
+    <!-- Navigation Tabs & Content -->
     <div class="row g-0 py-4">
         <div class="col-12">
             <div class="settings-content p-3">
                 <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                    <!-- Profile tab -->
                     <li [ngbNavItem]="1">
                         <button ngbNavLink>Profile</button>
                         <ng-template ngbNavContent>
-                            <div class="profile-details mt-4 h-100">
-                                <h4>Profile Details</h4>
-                                <p>Enter your profile information.</p>
-                                <form>
-                                    <div class="col-12">
-                                        <label class="form-label">Profile Image</label>
-                                        <div
-                                            class="profile-image-select d-grid justify-content-center align-items-center">
-                                            <button class="btn btn-light mb-2">Add File</button>
-                                            <p class="mb-0">Or drag and drop files</p>
-                                        </div>
-                                    </div>
-                                    <div class="row d-flex g-0">
-                                        <div class="col-6 pe-4">
-                                            <div class="mb-3">
-                                                <label for="firstName" class="form-label">First Name</label>
-                                                <input type="text" class="form-control" id="firstName" />
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="mb-3">
-                                                <label for="lastName" class="form-label">Last Name</label>
-                                                <input type="text" class="form-control" id="lastName" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 d-flex">
-                                        <div class="col-6 pe-4">
-                                            <div class="mb-3">
-                                                <label for="emailAddress" class="form-label">Email Address</label>
-                                                <input type="email" class="form-control" id="emailAddress" />
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="mb-3">
-                                                <label for="phoneNumber" class="form-label">Phone Number</label>
-                                                <input type="text" class="form-control" id="phoneNumber" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <hr class="horizontal-line">
-                            <div class="regional-settings">
-                                <h4>Regional Settings</h4>
-                                <p>Set your languange and timezone</p>
-                                <form>
-                                    <div class="row d-flex g-0">
-                                        <div class="col-6 pe-4">
-                                            <div class="d-grid mb-3">
-                                                <label for="language" class="form-label">Language</label>
-                                                <button class="btn btn-dropdown dropdown-toggle" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    English
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="d-grid mb-3">
-                                                <label for="timezone" class="form-label">Timezone</label>
-
-                                                <button class="btn btn-dropdown dropdown-toggle" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    GMT +02:00
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                            <app-profile-information></app-profile-information>
                         </ng-template>
                     </li>
+                    <!-- Notification tab -->
                     <li [ngbNavItem]="2">
                         <button ngbNavLink>Notifications</button>
                         <ng-template ngbNavContent>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <div class="row my-4">
-                                        <div class="col-10 d-flex align-items-center">
-                                            <div class="list-item">
-                                                <h4>Personalized Offers</h4>
-                                                <p class="mb-0">Receive offers made special for you</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center justify-content-end">
-                                            <div class="form-check form-switch form-switch-lg">
-                                                <input class="form-check-input" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckChecked" checked />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row my-4">
-                                        <div class="col-10 d-flex align-items-center">
-                                            <div class="list-item">
-                                                <h4>Online Webinars</h4>
-                                                <p class="mb-0">Get notified about upcoming webinars</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center justify-content-end">
-                                            <div class="form-check form-switch form-switch-lg">
-                                                <input class="form-check-input" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckChecked" checked />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row my-3">
-                                        <div class="col-10 d-flex align-items-center">
-                                            <div class="list-item">
-                                                <h4>New Features</h4>
-                                                <p class="mb-0">Updates about new features and product releases</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center justify-content-end">
-                                            <div class="form-check form-switch form-switch-lg">
-                                                <input class="form-check-input" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckChecked" checked />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row my-3">
-                                        <div class="col-10 d-flex align-items-center">
-                                            <div class="list-item">
-                                                <h4>Security and Billing</h4>
-                                                <p class="mb-0">Account security and notifications about billing</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center justify-content-end">
-                                            <div class="form-check form-switch form-switch-lg">
-                                                <input class="form-check-input" type="checkbox" role="switch" disabled
-                                                    id="flexSwitchCheckChecked" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row my-4">
-                                        <div class="col-10 d-flex align-items-center">
-                                            <div class="list-item">
-                                                <h4>Marketing</h4>
-                                                <p class="mb-0">Receive marketing newsletters about our new products.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center justify-content-end">
-                                            <div class="form-check form-switch form-switch-lg">
-                                                <input class="form-check-input" type="checkbox" role="switch" disabled
-                                                    id="flexSwitchCheckChecked" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                            <app-notifications></app-notifications>
                         </ng-template>
                     </li>
+                    <!-- Account tab -->
                     <li [ngbNavItem]="3">
                         <button ngbNavLink>Account</button>
                         <ng-template ngbNavContent>
-
                         </ng-template>
                     </li>
+                    <!-- Security tab -->
                     <li [ngbNavItem]="4">
                         <button ngbNavLink>Security</button>
                         <ng-template ngbNavContent>
-
                         </ng-template>
                     </li>
                 </ul>
-
                 <div [ngbNavOutlet]="nav" class="mt-2"></div>
             </div>
         </div>
     </div>
     <hr>
+    <!-- Footer buttons -->
     <div class="row">
         <div class="col-12 d-flex justify-content-end align-items-center">
             <hr />

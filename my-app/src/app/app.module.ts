@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProfileInformationComponent } from './settings/profile-information/profile-information.component';
+import { NotificationsComponent } from './settings/notifications/notifications.component';
 
 
 @NgModule({
@@ -12,6 +14,8 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     NavigationComponent,
     SettingsComponent,
+    ProfileInformationComponent,
+    NotificationsComponent,
     
   ],
   imports: [
