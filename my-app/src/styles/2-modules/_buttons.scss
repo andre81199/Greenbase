@@ -1,12 +1,18 @@
+/***
+*
+* Buttons.scss
+* Defines the apperance of all buttons
+*
+*/
+
 .btn-dropdown {
-  border: 1px solid #d9e1ec !important;
-  color: #131523 !important;
+  border: 1px solid $border-color !important;
+  color: $font-primary-color !important;
   background: white;
   justify-content: space-between;
   display: flex !important;
   align-items: center;
-  font-family: "Inter";
-  font-size: 1rem;
+  font-size: $font-lg;
 }
 
 .btn-primary {
@@ -17,5 +23,5 @@
 .btn-light {
   background: white !important;
   color: $accent-color !important;
-  border: 1px solid #d7dbec !important;
+  border: 1px solid $border-color !important;
 }

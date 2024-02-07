@@ -1,3 +1,10 @@
+/***
+*
+* settings.scss
+* Defines the apperance of all elements in the settings page
+*
+*/
+
 .bg-light {
   background: $bg-light;
 }
@@ -7,26 +14,27 @@
   height: fit-content;
   width: 100%;
   border-radius: 6px;
-  box-shadow: 0 1px 4px rgb(0 0 0 / 0.08);
+  box-shadow: $box-shadow;
 }
 
 .profile-image-select {
   padding: 2rem;
-  border: 1px dashed #a1a7c4;
+  border: 1px dashed $border-color-dark;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
 
 hr {
-  border: 1px solid #d7dbec !important;
+  border: 1px solid $border-color !important;
 }
 
+//Increase switch size
 .form-switch.form-switch-lg {
-  margin-bottom: 1.5rem; /* JUST FOR STYLING PURPOSE */
-}
+  margin-bottom: 1.5rem;
 
-.form-switch.form-switch-lg .form-check-input {
-  height: 2rem;
-  width: calc(3rem + 0.75rem);
-  border-radius: 4rem;
+  & .form-check-input {
+    height: 2rem;
+    width: calc(3rem + 0.75rem);
+    border-radius: 4rem;
+  }
 }

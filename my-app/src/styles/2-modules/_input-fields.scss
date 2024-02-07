@@ -1,5 +1,12 @@
+/***
+*
+* input-fields.scss
+* Defines the apperance of all input fields
+*
+*/
+
 .form-control {
-  border: 1px solid #d9e1ec;
+  border: 1px solid $border-color;
   border-radius: 4px;
 }
 
@@ -7,8 +14,7 @@
   border: none !important;
 
   &::placeholder {
-    font-family: "Inter";
-    color: #5a607f;
-    font-size: 1rem;
+    color: $font-accent;
+    font-size: $font-lg;
   }
 }

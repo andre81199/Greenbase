@@ -1,3 +1,33 @@
+/***
+*
+* global.scss
+* Import all directories in base
+*
+*/
+
+//Theme colors
+$accent-color: #1e5eff;
 $font-accent: #5a607f;
 $bg-light: #f5f6fa;
-$accent-color: #1e5eff;
+
+//Font sizes
+$font-sm: 0.7rem;
+$font-md: 0.8rem;
+$font-lg: 1rem;
+$font-xl: 1.5rem;
+
+//Font weight
+$line-height: 24px;
+$font-semibold: 700;
+$font-bold: 800;
+
+//Font-color
+$font-primary-color: #131523;
+$font-secondary-color: #5a607f;
+
+//Border Color
+$border-color: #d7dbec;
+$border-color-dark: #a1a7c4;
+
+//Shadows
+$box-shadow: 0 1px 4px rgb(0 0 0 / 0.08);

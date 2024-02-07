@@ -1,24 +1,32 @@
+/***
+*
+* typography.scss
+* Defines the apperance of all typography
+*
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-h4 {
-  font-family: "Inter";
-  font-weight: 800;
-  font-size: 1rem !important;
-  line-height: 24px;
-  color: #131523;
+body {
+  font-family: "Inter" !important;
 }
 
 h3 {
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 24px;
-  color: #131523;
+  font-weight: $font-semibold;
+  font-size: $font-xl;
+  line-height: $line-height;
+  color: $font-primary-color;
+}
+
+h4 {
+  font-weight: $font-bold;
+  font-size: $font-lg !important;
+  line-height: $line-height;
+  color: $font-primary-color;
 }
 
 p,
 label {
-  font-family: "Inter";
-  font-size: 0.8rem;
-  color: #5a607f;
+  font-size: $font-md;
+  color: $font-secondary-color;
 }
