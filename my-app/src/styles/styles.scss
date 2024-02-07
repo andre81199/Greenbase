@@ -1,0 +1,14 @@
+/***
+*
+* styles.scss
+* Import all directories
+*
+*/
+
+//Import styling directories
+@import './0-base/base-dir';
+@import './1-pages/page-dir';
+@import './2-modules/modules-dir';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

@@ -1,0 +1,52 @@
+.navbar {
+  height: 5rem;
+  color: #ffffff;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 0.08);
+
+  .navbar-dropdown-btn {
+    background: none;
+    color: $font-accent;
+  }
+}
+
+.sidebar {
+  background: $bg-light;
+  border: 0 1px 0 0 0;
+  border-right: 1px solid #d7dbec;
+
+  .nav-item {
+    padding: 0.1rem;
+
+    &.active {
+      background: #1e5eff;
+      border-radius: 4px;
+
+      .nav-link {
+        color: #ffffff;
+      }
+    }
+
+    .nav-link {
+      color: #5a607f;
+      font-size: 0.8rem;
+      font-family: "Inter";
+    }
+  }
+}
+
+.nav-text {
+  font-size: 0.7rem;
+  color: #a1a7c4;
+}
+
+.nav-item {
+  padding: 0.1rem;
+}
+
+.other-info-nav {
+  margin-top: 1.5rem;
+}
+
+.settings-nav {
+  margin-top: 1.5rem;
+}
